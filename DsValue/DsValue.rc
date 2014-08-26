@@ -1,0 +1,339 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\DsValue.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DsValue.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About DsValue"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "DsValue, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DSVALUE_DIALOG DIALOGEX 0, 0, 603, 288
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_LEFTSCROLLBAR | WS_EX_APPWINDOW
+CAPTION "DsValue"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,7,17,345,235
+    PUSHBUTTON      "StartMining",IDC_BUTTON1,59,259,49,14
+    PUSHBUTTON      "StopMining",IDC_BUTTON2,212,259,49,14
+    PUSHBUTTON      "Clear",IDC_CLEAR,502,259,49,14
+    EDITTEXT        IDC_MESSAGE,369,238,218,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_BUTTON3,386,259,49,14
+    GROUPBOX        "RPCCommand",IDC_STATIC,357,17,239,265
+    EDITTEXT        IDC_EDIT1,361,25,235,204,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_PAGE1 DIALOGEX 0, 0, 316, 221
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Wallet",IDC_STATIC1,35,28,41,13
+    LTEXT           "Balance:",IDC_STATIC2,35,52,41,13
+    LTEXT           "",IDC_STATIC3,82,53,38,17
+END
+
+IDD_PAGE2 DIALOGEX 0, 0, 316, 219
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Pay to:",IDC_STATIC,25,38,45,15
+    EDITTEXT        IDC_EDIT1,59,38,217,17,ES_AUTOHSCROLL
+    LTEXT           "Amount:",IDC_STATIC,25,70,28,8
+    EDITTEXT        IDC_EDIT2,59,68,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",ID_Send,105,126,50,14
+    EDITTEXT        IDC_EDIT3,59,93,217,17,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Result:",IDC_STATIC,25,98,24,8
+END
+
+IDD_PAGE3 DIALOGEX 0, 0, 331, 220
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Receive address:",IDC_STATIC,25,27,56,10
+    EDITTEXT        IDC_ADDRESS,83,25,171,15,ES_AUTOHSCROLL
+    LTEXT           "Select kind of bet:",IDC_STATIC,25,50,65,9
+    COMBOBOX        IDC_COMBO1,86,49,95,51,CBS_DROPDOWN | CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select NO.:",IDC_Select,25,72,55,10
+    EDITTEXT        IDC_EDIT2,83,72,152,14,ES_AUTOHSCROLL
+    LTEXT           "Total  Amount:",IDC_STATIC,25,120,63,9
+    EDITTEXT        IDC_ACOUNT,83,120,62,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_BUTTON1,157,165,62,15
+    EDITTEXT        IDC_EDIT4,83,143,223,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Select10_2:",IDC_AFTER,25,96,48,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT5,83,96,153,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO2,253,71,50,47,CBS_DROPDOWN | CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,255,96,50,46,CBS_DROPDOWN | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "GetAddress",IDC_GETADDRESS,255,26,50,14
+    RTEXT           "Result:",IDC_STATIC,25,143,24,8
+    LTEXT           "Amount per bet:",IDC_STATIC,178,120,58,8
+    EDITTEXT        IDC_PEERBET,255,119,49,12,ES_AUTOHSCROLL
+    LTEXT           "Total Tickets:",IDC_STATIC,199,49,53,13
+    LTEXT           "",IDC_Total,260,47,43,14
+END
+
+IDD_PAGE4 DIALOGEX 0, 0, 316, 211
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Send",IDC_BUTTON1,117,124,66,13
+    LTEXT           "Draw N0.:",IDC_STATIC,28,26,48,8
+    EDITTEXT        IDC_EDIT1,102,26,66,13,ES_AUTOHSCROLL
+    LTEXT           "Bet15_6_LuckN0.:",IDC_STATIC,28,55,61,11
+    EDITTEXT        IDC_EDIT2,102,53,66,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Multi_red:",IDC_STATIC,28,84,50,11
+    EDITTEXT        IDC_EDIT3,102,85,66,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Blue:",IDC_STATIC,188,84,35,11
+    EDITTEXT        IDC_EDIT4,213,84,52,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "",IDC_ERROR,52,110,161,14
+END
+
+IDD_PAGE5 DIALOGEX 0, 0, 337, 211
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,92,17,162,17,ES_AUTOHSCROLL
+    LTEXT           "Query Address:",IDC_STATIC,23,17,58,18
+    PUSHBUTTON      "Send",IDC_BUTTON1,109,164,61,14
+    EDITTEXT        IDC_EDIT3,23,41,291,117,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Clear",IDC_BUTTON2,217,164,61,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "DsValue.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "DsValue.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DSVALUE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 596
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 284
+    END
+
+    IDD_PAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_PAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_PAGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_PAGE4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_PAGE5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PAGE3 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 11, 0
+0x6553, 0x656c, 0x7463, 0x3531, 0x365f, "\000" 
+    IDC_COMBO1, 0x403, 16, 0
+0x6553, 0x656c, 0x7463, 0x3032, 0x355f, 0x315f, 0x5f30, 0x0032, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About DsValue..."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\DsValue.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
